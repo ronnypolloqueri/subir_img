@@ -2,7 +2,7 @@ class Product < ActiveRecord::Base
 	# attr_accessible :image_url
 	# Para dar acceso al directorio donde este nuestro rails
 	# /proyecto_rails/public/photo_store
-	FOTOS = File.join Rails.root, 'public', 'photo_store'
+	FOTOS = File.join Rails.root, 'app','assets','images', 'photo_store'
 	# Metodo para ejecutar acciones despues de haber
 	# guardado la información en la bd
 
@@ -21,8 +21,9 @@ class Product < ActiveRecord::Base
 
 	# Ej. /rails_project/public/photo_store/23.png
 	def imagen_filename
-		File.join FOTOS, "#{id},#{extension}"
+		File.join FOTOS, "#{id}.#{extension}"
 	end
+
 	# Ruta base, para poder acceder a las imagenes
 	def imagen_path
 		"photo_store/#{id}.#{extension}"
@@ -40,7 +41,7 @@ class Product < ActiveRecord::Base
 			#Accedemos al directorio Fotos o en caso no existiera
 			# se creara y accedera
 			FileUtils.mkdir_p FOTOS
-			File.open(photo_filename, 'wb') do |f|
+			File.open(imagen_filename, 'wb') do |f|
 				f.write(@file_data.read)
 			end
 			#Liberamos esta variable

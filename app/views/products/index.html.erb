@@ -6,7 +6,7 @@
     <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
 
       <td>
-        <%= image_tag product.image_url, :class => 'list_image' %>
+        <%= image_tag product.imagen_path, :class => 'list_image' %>
       </td>
 
       <td class="list_description">
@@ -20,7 +20,7 @@
       <td class="list_actions">
         <%= link_to 'Show', product %><br/>
         <%= link_to 'Edit', edit_product_path(product) %><br/>
-        <%= link_to 'Destroy', product, 
+        <%= link_to 'Destroy', product,
                     :confirm => 'Are you sure?',
                     :method => :delete %>
       </td>
