@@ -3522,3 +3522,54 @@ Completed 200 OK in 74ms (Views: 73.4ms | ActiveRecord: 0.2ms)
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "image_url", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 28 Jul 2013 17:13:19 UTC +00:00], ["description", "<p>\n        <em>Rails Test Prescriptions</em> is a comprehensive guide to testing\n        Rails applications, covering Test-Driven Development from both a\n        theoretical perspective (why to test) and from a practical perspective\n        (how to test effectively). It covers the core Rails testing tools and\n        procedures for Rails 2 and Rails 3, and introduces popular add-ons,\n        including Cucumber, Shoulda, Machinist, Mocha, and Rcov.\n      </p>"], ["image_url", "rtp.jpg"], ["price", #<BigDecimal:b1351e0,'0.4375E2',18(45)>], ["title", "Rails Test Prescriptions"], ["updated_at", Sun, 28 Jul 2013 17:13:19 UTC +00:00]]
   [1m[35m (19.7ms)[0m  commit transaction
+Processing by ProductsController#index as HTML
+Completed 500 Internal Server Error in 41ms
+  Rendered /home/ronny/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/ronny/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/ronny/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/ronny/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.9ms)
+Processing by ProductsController#index as HTML
+Completed 500 Internal Server Error in 3ms
+  Rendered /home/ronny/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/ronny/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/ronny/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/ronny/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+Processing by ProductsController#index as HTML
+Completed 500 Internal Server Error in 3ms
+  Rendered /home/ronny/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/ronny/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/ronny/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/ronny/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.9ms)
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.erb within layouts/application (86.0ms)
+Completed 200 OK in 191ms (Views: 187.8ms | ActiveRecord: 0.7ms)
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (137.4ms)
+  Rendered products/new.html.erb within layouts/application (169.3ms)
+Completed 200 OK in 178ms (Views: 176.6ms | ActiveRecord: 0.0ms)
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (6.9ms)
+  Rendered products/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (45.5ms)
+  Rendered products/new.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 58ms (Views: 53.9ms | ActiveRecord: 0.5ms)
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (8.4ms)
+  Rendered products/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 46ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (10.9ms)
+  Rendered products/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NZnAyegL88CnVrxwgGRPjOagJYy/nAixWbNH9ijEtdA=", "product"=>{"title"=>"primer ejemplo", "description"=>"adf", "image_url"=>#<ActionDispatch::Http::UploadedFile:0x9f15bcc @tempfile=#<Tempfile:/tmp/RackMultipart20130728-5443-bu5bma>, @original_filename="bouml1", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"product[image_url]\"; filename=\"bouml1\"\r\nContent-Type: application/octet-stream\r\n">, "price"=>"123.3"}, "commit"=>"Create Product"}
+Completed 500 Internal Server Error in 2ms
+  Rendered /home/ronny/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/ronny/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/ronny/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/ronny/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.1ms)
